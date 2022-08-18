@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(61, 105, 115);
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+#productForm {
+    display: flex;
+    flex-direction: column;
+    
+}
+#productForm * {
+    height: 3rem;
+    width: 20rem;
+}
+nav {
+    box-shadow: -1px 5px 14px 2px rgba(0, 0, 0, 0.65);
+    -webkit-box-shadow: -1px 5px 14px 2px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: -1px 5px 14px 2px rgba(0, 0, 0, 0.65);
+    font-size: 0.7em;
+    background: rgb(4, 129, 237);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: monospace;
+    box-shadow: 5 5 5 5;
+}
+#btn-iniciarSesion {
+    margin-left: 2em;
+    font-size: 0.7em;
+}
+
+#logOut-btn {
+    margin-left: 50px;
+}
+
+input {
+    width: 100px;
+}

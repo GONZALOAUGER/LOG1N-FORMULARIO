@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <%- include('./nav.ejs', {data}) %> 
+    </header>
+    <main>
+        <form id="productForm">
+            <input type="text" name="title" placeholder="Nombre" id="title">
+            <input type="text" name="price" placeholder="precio" id="price">
+            <input type="text" name="thumbnail" placeholder="url" id="img">
+    
+            <input type="submit" value="Subir producto">
+            <input type="reset" value="Limpiar">
+        </form>
+        <div id="productPool"></div>
+    </main>
+</body>
+</html>

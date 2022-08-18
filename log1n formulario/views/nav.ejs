@@ -1,0 +1,12 @@
+<nav>
+
+    <% if(data == undefined ){ %>
+  <form action="/login" id="sesionForm" method="POST">
+    <input type="text" name= "user" id="user" placeholder="usuario" />
+    <button id="btn-iniciarSesion" type="submit">
+      <h2>Iniciar sesion</h2>
+    </button>
+  </form>
+<% }else{ %>
+ <h1>Bienvenido <%= data %> </h1>  <form action="/logOut" method="get"><button type="submit" id="logOut-btn">Cerrar sesion</button></form>
+      <% } %>
